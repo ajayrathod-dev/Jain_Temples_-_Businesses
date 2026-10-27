@@ -1,0 +1,167 @@
+/* General Reset & Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header & Footer (shared with other pages) */
+.header {
+  background-color: #ff0048;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.header img {
+  max-width: 100px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.header .logo h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2em;
+  margin: 0;
+}
+
+.hamburger-menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1em;
+}
+
+footer {
+  background-color: #eb1455;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+}
+
+/* Container for Admin Content */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Admin Panel Form Container */
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+/* Form Inputs */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.form-container textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Form Button */
+.form-container button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #e04300;
+}
+
+/* Table Container */
+.table-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.table-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.5em;
+}
+
+/* Tables */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 0.9em;
+}
+
+.table-container th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table-container td a {
+  color: #ff4500;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.table-container td a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Admin Panel */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  .form-container, .table-container {
+    padding: 15px;
+  }
+
+  .table-container th,
+  .table-container td {
+    padding: 8px;
+  }
+}
